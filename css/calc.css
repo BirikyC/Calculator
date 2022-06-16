@@ -64,13 +64,13 @@
 	font-family: 'Kanit', sans-serif;
 }
 
-/*.calc-btns-up{
+.calc-btns-up{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 1em;
 	width: 100%;
 	margin-bottom: 1em;
-}*/
+}
 
 .btn{
 	position: relative;

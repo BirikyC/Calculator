@@ -53,11 +53,6 @@
 }
 
 .calc-btns{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(6, 1fr);
-	column-gap: 1em;
-	grid-row-gap: .35em;
 	width: 12em;
 	margin-top: .5em;
 	font-size: 2rem;
@@ -68,8 +63,15 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 1em;
-	width: 100%;
 	margin-bottom: 1em;
+}
+
+.calc-btns-btm{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	column-gap: 1em;
+	grid-row-gap: .35em;
 }
 
 .btn{

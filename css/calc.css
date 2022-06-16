@@ -39,6 +39,9 @@
 }
 
 .calc-score{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	height: 3em;
 	width: 12em;
 	margin: .5em;
@@ -86,7 +89,7 @@
 .btn-side{
 	content: '';
 	position: absolute;
-	top: -.05em;
+	top: -.03em;
 	right: -.175em;
 	height: 100%;
 	width: .25em;
@@ -100,7 +103,7 @@
 	content: '';
 	position: absolute;
 	bottom: -.175em;
-	left: -.04375em;
+	left: -.03em;
 	height: .25em;
 	width: 100%;
 	background-color: var(--btn-color-110);

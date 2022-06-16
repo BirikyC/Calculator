@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Quantico&display=swap');
+
+:root{
+	--btn-color-100: #808080;
+	--btn-color-110: #666666;
+	--btn-color-120: #7D7D7D;
+}

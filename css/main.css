@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 8px;
+}
+@media (min-width: 576px){
+	html{
+		font-size: 11px;
+	}
+}
+@media (min-width: 768px){
+	html{
+		font-size: 14px;
+	}
+}
+@media (min-width: 992px){
+	html{
+		font-size: 17px;
+	}
+}
+@media (min-width: 1200px){
+	html{
+		font-size: 20px;
+	}
+}
+
+body{
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	background-color: #73B3B1;
+	overflow: hidden;
+}

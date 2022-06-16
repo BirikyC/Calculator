@@ -1,4 +1,14 @@
 $(function(){
+	let result = $('.calc-score-result').text()
+	let action = $('.calc-score-action').text()
+
+	$('[data-number]').mousedown(function(){
+		//if(this.innerText == ".") return
+		action = parseFloat(action + this.innerText)
+
+		return $('.calc-score-action').html(action)
+	})
+
 	$('.btn').mousedown(function(){
 		$(this).css({right: '-.25em', bottom: '-.25em'})
 		$(this.children[0]).css({display: 'none'})

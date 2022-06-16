@@ -83,7 +83,7 @@
 	cursor: pointer;
 }
 
-.btn::before{
+.btn-side{
 	content: '';
 	position: absolute;
 	top: -.05em;
@@ -96,7 +96,7 @@
 	transform: skewY(45deg);
 }
 
-.btn::after{
+.btn-btm{
 	content: '';
 	position: absolute;
 	bottom: -.175em;

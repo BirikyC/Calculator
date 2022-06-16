@@ -64,7 +64,7 @@
 	font-family: 'Kanit', sans-serif;
 }
 
-.calc-btns-up{
+.calc-btns-top{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 1em;

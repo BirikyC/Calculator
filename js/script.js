@@ -1,13 +1,20 @@
 $(function(){
 	let result = $('.calc-score-result').text()
 	let action = $('.calc-score-action').text()
+	let isFloat = false
 
 	$('[data-container="number"]').mousedown(function(){
-		//if(this.innerText == ".") return
-		console.log('a')
-		action = parseFloat(action + this.innerText)
+		action = action + this.innerText
+		if(action[0] == 0 && action[1] != '.') action = action.substring(1)
 
 		return $('.calc-score-action').html(action)
+	})
+
+	$('[data-container="dot"]').mousedown(function(){
+		if(!isFloat) action = action + '.'
+		
+		$('.calc-score-action').html(action)
+		return isFloat = true
 	})
 
 	$('.btn').mousedown(function(){

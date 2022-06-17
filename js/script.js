@@ -2,8 +2,9 @@ $(function(){
 	let result = $('.calc-score-result').text()
 	let action = $('.calc-score-action').text()
 
-	$('[data-number]').mousedown(function(){
+	$('[data-container="number"]').mousedown(function(){
 		//if(this.innerText == ".") return
+		console.log('a')
 		action = parseFloat(action + this.innerText)
 
 		return $('.calc-score-action').html(action)

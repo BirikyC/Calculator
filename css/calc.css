@@ -72,7 +72,7 @@
 .calc-btns-btm{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 	column-gap: 1em;
 	grid-row-gap: .35em;
 }
@@ -91,7 +91,7 @@
 	right: -.25em;
 }
 
-.btn-clicked-children{
+.btn-animate{
 	display: none;
 }
 
@@ -137,23 +137,3 @@
 .btn:hover > span{
 	background-color: var(--btn-color-120);
 }
-
-/*.calc-btns-btm{
-	display: flex;
-	width: calc(12em - 6.5rem);
-	column-gap: 1em;
-}
-
-.calc-btns-btm-left{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(5, 1fr);
-	column-gap: 1em;
-	row-gap: .35em;
-}
-
-.calc-btns-btm-right{
-	display: grid;
-	grid-template-rows: repeat(5, 1fr);
-	grid-row-gap: .35em;
-}*/

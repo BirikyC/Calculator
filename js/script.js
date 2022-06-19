@@ -65,8 +65,9 @@ $(function(){
 	$('[data-container="clear"]').mousedown(function(){
 		action = 0
 		$('.calc-score-action').html(action)
-
+		
 		if(this.innerText === "CE") return
+
 		result = 0
 		$('.calc-score-result').html(result)
 	})

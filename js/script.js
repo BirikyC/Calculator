@@ -35,6 +35,9 @@ $(function(){
 		else if(symbol === "−"){
 			result -= action
 		}
+		else if(symbol === "÷"){
+			result /= action
+		}
 		else if(symbol === "="){
 			result = action
 		}

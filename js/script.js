@@ -5,21 +5,34 @@ $(function(){
 	let isFloat = false
 	let lastClickNumber = null
 
+	$(document).keydown(function(e){
+		if(e.key === "." || e.key === ",") floatNumber()
+		if(e.which >= 48 && e.which <= 57) enterNumber(e.key)
+	})
+
 	$('[data-container="number"]').mousedown(function(){
-		action = action + this.innerText
+		enterNumber(this.innerText)
+	})
+
+	$('[data-container="dot"]').mousedown(function(){
+		floatNumber()
+	})
+
+	function enterNumber(num){
+		action = action + num
 		if(action[0] == 0 && action[1] != '.') action = action.substring(1)
 
 		$('.calc-score-action').html(action)
 
 		return lastClickNumber = true
-	})
+	}
 
-	$('[data-container="dot"]').mousedown(function(){
+	function floatNumber(){
 		if(!isFloat) action = action + '.'
 		
 		$('.calc-score-action').html(action)
 		return isFloat = true
-	})
+	}
 
 	$('[data-container="symbol"]').mousedown(function(e){
 		isFloat = false

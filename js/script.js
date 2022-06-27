@@ -22,7 +22,7 @@ $(function(){
 		action = action + num
 		if(action[0] == 0 && action[1] != '.') action = action.substring(1)
 
-		$('.calc-score-action').html(action)
+		$('.calc-score-action').html(parseFloat(action))
 
 		return lastClickNumber = true
 	}
